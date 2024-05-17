@@ -36,7 +36,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: MI-MINI
+        TNAME: NEWIFI3
         KERNEL: 3.4
       run: |
         cd /opt/rt-n56u/trunk
@@ -86,5 +86,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-packages
+        name: NEWIFI3
         path: /opt/images
